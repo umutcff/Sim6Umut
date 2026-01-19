@@ -91,6 +91,8 @@ namespace Sim6Umut.Controllers
             {
                 Name = "Admin"
             });
+
+            return Ok("Added roles");
         }
     }
 }
