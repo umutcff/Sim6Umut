@@ -1,9 +1,11 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace Sim6Umut.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
        

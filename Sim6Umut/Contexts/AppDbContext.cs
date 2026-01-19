@@ -17,5 +17,7 @@ namespace Sim6Umut.Contexts
             base.OnModelCreating(builder);
         }
 
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

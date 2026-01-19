@@ -13,6 +13,7 @@ namespace Sim6Umut.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Register(RegisterVM vm)
         {
             if (!ModelState.IsValid)
@@ -49,6 +50,8 @@ namespace Sim6Umut.Controllers
             return View();
         }
 
+
+        [HttpPost]
         public async Task<IActionResult> Login(LoginVM vm)
         {
             if (!ModelState.IsValid)
@@ -74,11 +77,13 @@ namespace Sim6Umut.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction(nameof(Login));
         }
+
 
         public async Task<IActionResult> CreateRoles()
         {

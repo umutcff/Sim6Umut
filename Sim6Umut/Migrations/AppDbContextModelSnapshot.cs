@@ -239,7 +239,7 @@ namespace Sim6Umut.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Sim6Umut.Models.Project", b =>
@@ -266,7 +266,7 @@ namespace Sim6Umut.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Project");
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
